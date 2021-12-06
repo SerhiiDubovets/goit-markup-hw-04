@@ -47,7 +47,7 @@ img {
   padding-bottom: 94px;
 }
 
-/* Шапка */
+/* --------------------------Шапка----------------------------- */
 
 .header {
   background-color: #ffffff;
@@ -148,10 +148,10 @@ img {
   fill: #757575;
 }
 
-.icon-envelope:hover,
-.icon-envelope:focus,
-.icon-smartphone:hover,
-.icon-smartphone:focus {
+.auth-nav-link:hover .icon-envelope,
+.auth-nav-link:focus .icon-envelope,
+.auth-nav-link:hover .icon-smartphone,
+.auth-nav-link:focus .icon-smartphone {
   fill: var(--accent-color);
 }
 
@@ -163,7 +163,7 @@ img {
   fill: #757575;
 }
 
-/* Заказ услуги  */
+/* ---------------------Заказ услуги---------------------------  */
 
 .hero {
   padding: 200px 0;
@@ -219,7 +219,7 @@ img {
   text-transform: uppercase;
 }
 
-/* Особенности компании */
+/* ------------------------Особенности компании------------------------ */
 
 .compani-title {
   position: absolute;
@@ -238,18 +238,6 @@ img {
   margin-right: 30px;
   justify-content: center;
 }
-
-/* .features-item::before {
-  content: '';
-  display: inline-block;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-
-  background-color: #f5f4fa;
-  background-image: url(../images/antenna.svg);
-} */
 
 .features-item:last-child {
   margin-right: 0px;
@@ -285,7 +273,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-/* Чем мы занимаемся */
+/* ----------------------Чем мы занимаемся--------------------- */
 
 .work-titles,
 .command-titles,
@@ -312,7 +300,7 @@ img {
   margin-right: 0px;
 }
 
-/* Наша команда */
+/* ------------------------Наша команда------------------------ */
 
 .command {
   background-color: #f5f4fa;
@@ -392,18 +380,24 @@ img {
   justify-content: center;
 }
 
-.icon-item {
+.icon-link:hover,
+.icon-link:focus {
+  background-color: var(--accent-color);
+}
+
+.icon-link {
+  display: flex;
   margin-right: 10px;
   width: 44px;
   height: 44px;
   justify-content: center;
   align-items: center;
-  display: flex;
   border-radius: 50%;
 }
-.icon-item:hover,
-.icon-item:focus {
-  background-color: var(--accent-color);
+
+.icon-link:hover .icon-svg,
+.icon-link:focus .icon-svg {
+  fill: #fff;
 }
 
 .icon-item:last-child {
@@ -415,18 +409,7 @@ img {
   fill: var(--title-text-color);
 }
 
-.icon-svg:hover,
-.icon-svg:focus {
-  fill: #fff;
-}
-
-/* Постоянные клиенты */
-
-.client {
-}
-
-.client-titles {
-}
+/* ---------------------Постоянные клиенты----------------- */
 
 .client-list {
   display: flex;
@@ -436,39 +419,50 @@ img {
 }
 
 .client-item {
-  width: 170px;
-  height: 92px;
-  border: 1px solid #ececec;
-  border-radius: 4px;
   margin-right: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.client-item:hover,
-.client-item:focus {
-  border: 1px solid var(--accent-color);
 }
 
 .client-item:last-child {
   margin-right: 0;
 }
 
+.client-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
 .client-icon {
   fill: var(--title-text-color);
 }
 
-.client-icon:hover,
-.client-icon:focus {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
 }
 
-/* footer */
+/* ---------------------footer----------------------*/
 
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+}
+
+.footer-cont {
+  display: flex;
+}
+
+.address-block {
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -512,7 +506,53 @@ img {
   text-decoration: none;
 }
 
-/* -----Портфолио----- */
+.connect-block {
+  margin-top: 15px;
+}
+
+.connect-titles {
+  margin-bottom: 20px;
+
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.connect-list {
+  display: flex;
+}
+
+.connect-item:last-child {
+  margin-right: 0;
+}
+
+.connect-link:hover,
+.connect-link:focus {
+  background-color: var(--accent-color);
+}
+
+.connect-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.connect-svg {
+  width: 20px;
+
+  fill: #fff;
+}
+
+/* ====================== ПОРТФОЛИО ======================*/
 
 .portfolio-name {
   position: absolute;
@@ -561,7 +601,7 @@ img {
   color: #ffffff;
 }
 
-/* Контент фильтра */
+/* ------------------Контент фильтра------------------ */
 .gallery {
   display: flex;
   flex-wrap: wrap;
